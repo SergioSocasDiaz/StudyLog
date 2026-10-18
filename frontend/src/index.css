@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f4f1de;
+  --surface: #fbf9f0;
+  --foreground: #1a0402;
+  --muted-foreground: #6b5a52;
+  --border: #d9d2bd;
+
+  --primary: #3b7080;
+  --primary-foreground: #f4f1de;
+  --accent: #e4572e;
+
+  --success: #2f6b4f;
+  --warning: #7a5a12;
+  --error: #760b05;
+
+  --subject-1: #3b7080;
+  --subject-2: #e4572e;
+  --subject-3: #2f6b4f;
+  --subject-4: #7a5a12;
+  --subject-5: #5e4a7a;
+  --subject-6: #a340b7;
+  --subject-7: #a92e3a;
+  --subject-8: #16bcc5;
+}
+
+.dark {
+  --background: #1a0402;
+  --surface: #760b05;
+  --foreground: #f4f1de;
+  --muted-foreground: #cfc9b4;
+  --border: #5a1510;
+
+  --primary: #e4572e;
+  --primary-foreground: #1a0402;
+  --accent: #e4572e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-focus: var(--accent);
+  --color-progress: var(--accent);
+  --color-primary-hover: color-mix(in srgb, var(--primary) 85%, black);
+
+  --color-progress-track: var(--border);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  --color-subject-1: var(--subject-1);
+  --color-subject-2: var(--subject-2);
+  --color-subject-3: var(--subject-3);
+  --color-subject-4: var(--subject-4);
+  --color-subject-5: var(--subject-5);
+  --color-subject-6: var(--subject-6);
+  --color-subject-7: var(--subject-7);
+  --color-subject-8: var(--subject-8);
+
+  --radius-card: 10px;
+  --radius-control: 14px;
+  --radius-chip: 14px;
+}
