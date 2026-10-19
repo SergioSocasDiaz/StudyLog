@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -7,7 +8,7 @@
   --surface: #fbf9f0;
   --foreground: #1a0402;
   --muted-foreground: #6b5a52;
-  --border: #d9d2bd;
+  --border: #b5ae9a;
 
   --primary: #3b7080;
   --primary-foreground: #f4f1de;
@@ -25,6 +26,10 @@
   --subject-6: #a340b7;
   --subject-7: #a92e3a;
   --subject-8: #16bcc5;
+
+  --type-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --type-sans: "IBM Plex Sans", Arial, sans-serif;
+  --type-mono: "IBM Plex Mono", "Courier New", monospace;
 }
 
 .dark {
@@ -68,7 +73,47 @@
   --color-subject-7: var(--subject-7);
   --color-subject-8: var(--subject-8);
 
+  --font-landing: var(--type-display);
+  --font-normal: var(--type-sans);
+  --font-mono: var(--type-mono);
+
   --radius-card: 10px;
   --radius-control: 14px;
   --radius-chip: 14px;
 }
+
+/*@layer base {
+  html {
+    font-family: var(--type-sans);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--type-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--type-display);
+    line-height: 1.15;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  code,
+  kbd,
+  pre,
+  .font-data {
+    font-family: var(--type-mono);
+  }
+}
+*/
