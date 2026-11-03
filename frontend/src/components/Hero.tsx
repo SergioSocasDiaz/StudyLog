@@ -2,7 +2,7 @@ import { BasicAnchor } from "./basic/BasicAnchor.tsx"
 
 export function Hero(){
     return(
-        <div className="flex flex-col justify-center items-center p-4 gap-4 text-center max-w-5/6">
+        <div className="flex flex-col justify-center items-center p-4 gap-6 text-center max-w-5/6">
             <div className="bg-surface px-3 py-2 rounded-3xl flex justify-center items-center gap-2 max-w-1/2">
                 <div className="bg-accent max-w-2 w-full h-2 rounded-full animate-ping"></div>
                 <span>Diseñado para ayudarte a alcanzar tus objetivos</span>

@@ -2,5 +2,5 @@
 
 ## Stack utilizado
 
-- **Frontend:** Vite + React + React-Router + Tailwindcss
+- **Frontend:** Vite + React + React-Router + Tailwindcss + TablerIcons
 
